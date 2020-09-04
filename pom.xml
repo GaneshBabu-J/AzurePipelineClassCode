@@ -540,7 +540,7 @@
             </reporting>
         </profile>
     </profiles>
-    <!---distributionManagement>
+    <!--- <distributionManagement>
     <repository>
       <id>github</id>
       <name>DevOps Demo Apache Maven Packages</name>
