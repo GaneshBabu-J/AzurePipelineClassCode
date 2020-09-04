@@ -8,7 +8,7 @@ steps:
 - task: MavenAuthenticate@0
   displayName: 'Maven Authenticate'
   inputs:
-    artifactsFeeds: mavenfeed
+    artifactsFeeds: myfeed
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
