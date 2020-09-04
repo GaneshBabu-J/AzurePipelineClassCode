@@ -48,9 +48,11 @@ stages:
     - task: MavenAuthenticate@0
       displayName: 'Maven Authenticate'
       inputs:
-        artifactsFeeds: myfeed
-- publish:  $(Build.ArtifactStagingDirectory)
-  artifact: myfeed
+        artifactsFeeds: testfeed2
+     - task: PublishPipelineArtifact@1
+       inputs:
+         targetPath: $(System.DefaultWorkingDirectory)
+         artifactName: testfeed2
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build
