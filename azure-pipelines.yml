@@ -44,7 +44,11 @@ stages:
 
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
-
+      
+    - task: MavenAuthenticate@0
+      displayName: 'Maven Authenticate'
+      inputs:
+        artifactsFeeds: myfeed
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build
