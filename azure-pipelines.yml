@@ -49,6 +49,8 @@ stages:
       displayName: 'Maven Authenticate'
       inputs:
         artifactsFeeds: myfeed
+- publish:  $(Build.ArtifactStagingDirectory)
+  artifact: myfeed
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build
