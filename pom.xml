@@ -20,6 +20,16 @@
    </properties>
     
     <repositories>
+	<repository>
+  <id>myfeed</id>
+  <url>https://pkgs.dev.azure.com/ganeshj0569/DevOpsClassCodes/_packaging/myfeed/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
         <repository>
             <id>vaadin-prereleases</id>
             <name>Vaadin Pre-releases</name>
@@ -542,8 +552,8 @@
     </profiles>
     <distributionManagement>
     <repository>
-  <id>ganeshj0569</id>
-  <url>https://pkgs.dev.azure.com/ganeshj0569/_packaging/ganeshj0569/maven/v1</url>
+  <id>myfeed</id>
+  <url>https://pkgs.dev.azure.com/ganeshj0569/DevOpsClassCodes/_packaging/myfeed/maven/v1</url>
   <releases>
     <enabled>true</enabled>
   </releases>
