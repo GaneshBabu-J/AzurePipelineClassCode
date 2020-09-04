@@ -540,14 +540,18 @@
             </reporting>
         </profile>
     </profiles>
-    <!-- <distributionManagement>
+    <distributionManagement>
     <repository>
-      <id>github</id>
-      <name>DevOps Demo Apache Maven Packages</name>
-	    <url>https://maven.pkg.github.com/DevTools-India/DevOps-Demo</url>
-    </repository>
-  </distributionManagement> -->
-	
+  <id>ganeshj0569</id>
+  <url>https://pkgs.dev.azure.com/ganeshj0569/_packaging/ganeshj0569/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+  </distributionManagement>
 </project>
 
 
